@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Adolfo David Romero
+
+% Referenced from:
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx} % For including images
+\input{glyphtounicode}
+
+% Styles
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%-----------HEADER-----------
+\begin{center}
+    \textbf{\Huge \scshape Adolfo David Romero} \\ \vspace{1pt}
+    \small \textbf{Canadian \& U.S. Dual-Citizen }$|$ 
+    \small +1 (289) 400-5591 $|$
+    \href{mailto:a.davidromero@icloud.com}{\underline{a.davidromero@icloud.com}} $|$
+    \small{Oakville, ON} $|$ 
+    \href{https://linkedin.com/in/adolfo-david-romero}{\underline{linkedin}} $|$
+    \href{https://github.com/adolfo-david-romero}{\underline{github}}
+\end{center}
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{tabularx}{\textwidth}{@{} l >{\hspace{1em}}X @{}}
+\textbf{Languages:} & SQL, Python, Java, C\#, JavaScript, HTML/CSS, Swift, Kotlin, C/C++ \\
+\textbf{Databases:} & MySQL, PostgreSQL, Firebase Realtime DB, Firestore, Core Data \\
+\textbf{Cloud Platforms:} & Google Cloud, Microsoft Azure, AWS, Firebase \\
+\textbf{Frameworks:} & Node.js, Spring Boot, .NET MAUI, React Native, Expo \\
+\textbf{DevOps \& Tools:} & Git, Docker, VS Code, IntelliJ, Visual Studio, XCode, Android Studio \\
+\textbf{Libraries \& Analytics:} & Pandas, NumPy, Matplotlib, TensorFlow/TensorFlow Lite, Core Motion \\
+\end{tabularx}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sheridan College}{Oakville, ON}
+      {Honours Bachelor of Computer Science, specialization in Mobile Computing}{Sept. 2019 -- Apr. 2025}
+      \resumeItemListStart
+      \resumeItem{\small Minor in Creativity \& Creative Problem Solving}
+      \resumeItemListEnd
+      {\vspace{-5pt} % Adjust this value to fine-tune the spacing between lines
+      \small{\emph{}}}
+      
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+%Generator
+    \resumeSubheading
+      {Application Developer \& Student Research Assistant}{Sept. 2024 -- Mar. 2025}
+      {\href{https://www.sheridancollege.ca/research}{Generator Research at Sheridan}}{Brampton, ON}
+      \resumeItemListStart
+        \resumeItem{Engineered a dual Android app system for the “Seniors Digital Smart Health Assistant,” enabling real-time data sharing and health notifications for elderly users.}
+        \resumeItem{Referenced app architecture contributed to successful system commercialization, supporting future manufacturing use cases.}
+        \resumeItem{Designed and deployed cloud infrastructure achieving 99\%+ accuracy in syncing smartwatch data with mobile applications.}
+      \resumeItemListEnd
+      
+%CAAI
+%Move Recognized research here
+    \resumeSubheading
+      {Mobile Application Developer (Co-op)}{Jan. 2024 -- Aug 2024}
+      {\href{https://pointclickcare.com/}{PointClickCare}}{Oakville, ON}
+      \resumeItemListStart
+        \resumeItem{Developed a cloud-based mHealth platform to enhance remote patient monitoring efficiency for older adults.}
+        \resumeItem{Secured a strategic consultation with Google by proactively reaching out for specialized wearable development resources, resulting in a 20\% increase in production efficiency for the project.}
+        \resumeItem{Leveraged native AndroidOS, WearOS, and React Native to build responsive mobile and wearable solutions.}
+        \resumeItem{Integrated ML-driven location classification features using Google Maps API, optimizing real-time patient context.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      % Groovify
+      \resumeProjectHeading
+          {\textbf{{Groovify}
+          \href{https://github.com/Adolfo-David-Romero/Groovify}{\includegraphics[height=9pt]{github-logo.png}}
+          \href{https://www.youtube.com/watch?v=jSiBa_nlCQs}{\includegraphics[height=9pt]{play-icon.png}}} 
+          $|$ \emph{REST API, Swift, iOS, Firebase, Core Data, Git}}{Sept 2024 -- Dec. 2024}
+          \resumeItemListStart
+            \resumeItem{Created an iOS app that generates music recommendations by integrating Spotify and Ticketmaster APIs.}
+            \resumeItem{Designed and deployed a mood-based playlist engine using Spotify’s SDK, aligning with user preferences.}
+            \resumeItem{Added location-based concert alerts via Ticketmaster API, increasing user engagement with nearby events.}
+            \resumeItem{Developed a clean, intuitive UI with Swift, UIKit, and WidgetKit, including homescreen widgets for easy access.}
+          \resumeItemListEnd
+          % Golf Swing Trainer
+          \resumeProjectHeading
+          {\textbf{{Golf Swing Training}
+          \href{https://github.com/HarryLiu4154/GolfSwingTrainer.git}{\includegraphics[height=9pt]{github-logo.png}}
+          \href{https://www.youtube.com/watch?v=8hmRoTPjfsE}{\includegraphics[height=9pt]{play-icon.png}}} 
+          $|$ \emph{Swift, Firebase, ARKit, Core Motion, Git}}{Sept. 2023 -- Dec. 2024}
+          \resumeItemListStart
+            \resumeItem{Built an iOS + watchOS golf training app combining ML, motion data, and 3D visualization to improve player performance.}
+            \resumeItem{Integrated WatchOS sensors for real-time swing capture, enhancing motion analysis and feedback accuracy.}
+            \resumeItem{Applied a custom ML model (SwingNet) to classify swings and deliver targeted feedback, improving training outcomes.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------Volunteering, Interests, & Additional Skills-----------
+\section{Volunteering, Interests, \& Additional Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{\href{https://bearhacks2025.devpost.com/}{BearHacks Hackathon} Mentor}{: Mar. 28th - Mar. 30th, 2025.} \\
+     \textbf{\href{https://www.hackville.io/}{MLH Hackville Hackathon} Mentor}{: Jan. 17th - Jan 19th, 2025.} \\
+     \textbf{\href{https://gdg.community.dev/gdg-on-campus-sheridan-college-trafalgar-road-campus-oakville-canada/}{{Google Developer Student Club}} Volunteer}{: Jan. 2022 – Jan. 2023.} \\
+     \textbf{\href{https://www.linkedin.com/posts/adolfo-david-romero_research-innovation-studentawards-activity-7228852749797396480-1Qj9?utm_source=share&utm_medium=member_desktop}{Recognized Research}}{: Nominated for the 2024 \href{https://www.sheridancollege.ca/newsroom/articles/research-scholarship/2024-generator-student-awards}{\emph{Innovation in Research}} award by \href{https://www.sheridancollege.ca/research/centres/applied-ai}{The Center for Applied AI} (CAAI).}\\
+     \textbf{{Music} \& {\href{https://youtu.be/riCd8ONRqcU?si=FA0FkaM_xm9Em67O}{Performance}}}{: Composed music for \href{https://taafi.com/}{TAAFI} nominated animated film.} \\
+     \textbf{Bi-Lingual}{: Native in English \& Fluent in Spanish.} \\
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+%%%%%%  RESUME ENDS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------
+\end{document}
